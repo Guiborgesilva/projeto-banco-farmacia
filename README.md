@@ -6,3 +6,7 @@
 <p align="center">
     <img src="./modelo_logico_farmacia.jpg" alt="Modelo lógico do Banco de Dados" />
 </p>
+
+# Construção do projeto
+
+<p>Construímos um programa em Python que permite a comunicação com o Banco de Dados PostgreSQL</p>
