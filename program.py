@@ -279,7 +279,7 @@ class SistemaFarmacia(tk.Tk):
         _, _, fornecedores = self.db.buscar_tabela("SELECT cnpj, nome FROM fornecedores ORDER BY nome")
         lista_forn = [f"{row[0]} - {row[1]}" for row in fornecedores]
 
-        _, _, produtos = self.db.buscar_tabela("SELECT id, nome FROM produtos ORDER BY nome")
+        _, _, produtos = self.db.buscar_tabela("SELECT id, nome FROM produtos ORDER BY id")
         lista_prod = [f"{row[0]} - {row[1]}" for row in produtos]
 
         tk.Label(frame, text="Data (DD/MM/AAAA):", bg="#C0C0C0").grid(row=1, column=0, sticky="w", pady=5)
